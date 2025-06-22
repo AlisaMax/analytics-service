@@ -1,10 +1,10 @@
 import cn from 'classnames';
 import styles from './HistoryItem.module.css';
-import Modal from '../modal/Modal';
+import Modal from '../../../../components/modal/Modal';
 import { useState } from 'react';
-import icons from '../../assets/icons/icons';
-import { useHistoryStore } from '../../store/historyStore';
-import type { AggregationResult } from '../../types/aggregationResult';
+import icons from '../../../../assets/icons/icons';
+import { useHistoryStore } from '../../../../store/historyStore';
+import type { AggregationResult } from '../../../../types/aggregationResult';
 
 interface HistoryItemProps {
   id: string;

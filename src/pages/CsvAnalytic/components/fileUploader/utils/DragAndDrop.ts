@@ -1,4 +1,4 @@
-import { useFileStore, FileStatus } from '../../store/fileStore';
+import { useFileStore, FileStatus } from '../../../../../store/fileStore';
 
 export const onDragOver = (e: React.DragEvent<HTMLElement>): void => {
   e.preventDefault();
@@ -17,17 +17,15 @@ export const onDragLeave = (e: React.DragEvent<HTMLElement>): void => {
 
 export const handleDrop = (e: React.DragEvent<HTMLElement>): void => {
   e.preventDefault();
-  const { setFile, setIsCorrect, setStatus } = useFileStore.getState();
+  const { setFile, setStatus } = useFileStore.getState();
 
   const droppedFile = e.dataTransfer.files[0] || null;
 
   setFile(droppedFile);
 
   if (droppedFile?.type === 'text/csv') {
-    setIsCorrect(true);
     setStatus(FileStatus.ADDED);
   } else {
-    setIsCorrect(false);
     setStatus(FileStatus.ERROR);
   }
 };

@@ -1,6 +1,6 @@
 import { createPortal } from 'react-dom';
 import styles from './Modal.module.css';
-import AggregationResultField from '../UI/aggregationResultField/AggregationResultField';
+import AggregationResultField from '../aggregationResultField/AggregationResultField';
 import { transformData, type OutputItem } from '../../functions/transformAggregationData';
 import icons from '../../assets/icons/icons';
 import type { AggregationResult } from '../../types/aggregationResult';

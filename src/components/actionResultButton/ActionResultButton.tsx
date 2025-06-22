@@ -1,10 +1,10 @@
 import type { RefObject, FC } from 'react';
-import { handleClear } from '../../../features/fileUploader/handleClear';
-import icons from '../../../assets/icons/icons';
+import { handleClear } from '../../features/fileUploader/handleClear';
+import icons from '../../assets/icons/icons';
 import styles from './ActionResultButton.module.css';
 import cn from 'classnames';
-import { useGenerateFileStore, GenerateFileStatus } from '../../../store/generateFileStore';
-import { FileStatus } from '../../../store/fileStore';
+import { useGenerateFileStore, GenerateFileStatus } from '../../store/generateFileStore';
+import { FileStatus } from '../../store/fileStore';
 
 type StatusType = FileStatus | GenerateFileStatus;
 

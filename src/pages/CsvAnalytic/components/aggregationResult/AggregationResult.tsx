@@ -1,7 +1,7 @@
 import styles from './AggregationResult.module.css';
-import { useAggregatedFields } from '../../features/aggregation/AggregationFields';
-import AggregationResultField from '../UI/aggregationResultField/AggregationResultField';
-import { useFileStore, FileStatus } from '../../store/fileStore';
+import { useAggregatedFields } from '../../../../features/aggregation/useAggregatedFields';
+import AggregationResultField from '../../../../components/aggregationResultField/AggregationResultField';
+import { useFileStore, FileStatus } from '../../../../store/fileStore';
 
 const AggregationResult = () => {
   const fields = useAggregatedFields();

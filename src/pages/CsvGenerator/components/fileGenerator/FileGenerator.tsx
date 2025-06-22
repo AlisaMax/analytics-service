@@ -1,8 +1,8 @@
-import { generateFile } from '../../features/generateFile/generateFile';
-import { useGenerateFileStore, GenerateFileStatus } from '../../store/generateFileStore';
-import ActionResultButton from '../UI/actionResultButton/ActionResultButton';
-import Button from '../UI/button/Button';
-import Loader from '../UI/loader/Loader';
+import { generateFile } from '../../../../features/generateFile/generateFile';
+import { useGenerateFileStore, GenerateFileStatus } from '../../../../store/generateFileStore';
+import ActionResultButton from '../../../../components/actionResultButton/ActionResultButton';
+import Button from '../../../../components/button/Button';
+import Loader from '../../../../components/loader/Loader';
 import styles from './FileGenerator.module.css';
 
 const FileGenerator = () => {

@@ -1,4 +1,4 @@
-import FileGenerator from '../../components/fileGenerator/FileGenerator';
+import FileGenerator from './components/fileGenerator/FileGenerator';
 import Header from '../../components/header/Header';
 import { useGenerateFileStore, GenerateFileStatus } from '../../store/generateFileStore';
 import styles from './CsvGeneratorPage.module.css';

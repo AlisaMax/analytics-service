@@ -7,7 +7,7 @@ interface HistoryItem {
   name: string;
   date: string;
   success: boolean;
-  result?: AggregationResult;
+  result?: AggregationResult | null;
 }
 interface HistoryStore {
   history: HistoryItem[];

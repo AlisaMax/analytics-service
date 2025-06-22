@@ -8,7 +8,7 @@ export interface OutputItem {
   value: string | number;
 }
 
-const map: Record<string, string> = {
+export const map: Record<keyof AggregationResult, string> = {
   total_spend_galactic: 'общие расходы в галактических кредитах',
   less_spent_civ: 'цивилизация с минимальными расходами',
   rows_affected: 'количество обработанных записей',
@@ -19,26 +19,15 @@ const map: Record<string, string> = {
   average_spend_galactic: 'средние расходы в галактических кредитах',
 };
 
-const keys = [
-  'total_spend_galactic',
-  'less_spent_civ',
-  'rows_affected',
-  'big_spent_at',
-  'less_spent_at',
-  'big_spent_value',
-  'big_spent_civ',
-  'average_spend_galactic',
-];
-
 export function transformData(data: Input): OutputItem[] {
-  return keys
-    .filter((key) => key in data)
-    .map((key) => ({
+  return Object.keys(map).flatMap((key) => {
+    const value = data[key as keyof AggregationResult];
+    if (value === undefined) return [];
+
+    return {
       name: key,
-      title: map[key],
-      value:
-        typeof data[key as keyof AggregationResult] === 'number'
-          ? Math.round(data[key as keyof AggregationResult] as number)
-          : data[key as keyof AggregationResult],
-    }));
+      title: map[key as keyof AggregationResult],
+      value: typeof value === 'number' ? Math.round(value) : value,
+    };
+  });
 }

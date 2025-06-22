@@ -1,5 +1,5 @@
-import AggregationResult from '../../components/aggregationResult/AggregationResult';
-import FileUploader from '../../components/fileUploader/FileUploader';
+import AggregationResult from './components/aggregationResult/AggregationResult';
+import FileUploader from './components/fileUploader/FileUploader';
 import Header from '../../components/header/Header';
 import styles from './CsvAnalytic.module.css';
 

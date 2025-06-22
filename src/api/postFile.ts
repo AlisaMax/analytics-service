@@ -1,5 +1,6 @@
-export async function postFile(file: File, rows: number) {
+export async function postFile(file: File) {
   const formData = new FormData();
+  const rows = 10000;
   formData.append('file', file);
 
   try {

@@ -10,26 +10,24 @@ export const generateFile = async () => {
     const response = await getGeneratedFile(0.01);
 
     if (!response.ok) {
-      const error = await response.json();
+      const errorData = await response.json();
       setStatus(GenerateFileStatus.ERROR);
-      return { success: false, error };
+      throw new Error(errorData?.message || 'Сервер вернул ошибку при генерации файла');
     }
 
     const blob = await response.blob();
     const url = URL.createObjectURL(blob);
+
     const a = document.createElement('a');
     a.href = url;
     a.download = 'file.csv';
     a.click();
-    URL.revokeObjectURL(url);
 
+    URL.revokeObjectURL(url);
     setStatus(GenerateFileStatus.SUCCESS);
-    return { success: true };
   } catch (err) {
     setStatus(GenerateFileStatus.ERROR);
-    return {
-      success: false,
-      error: err instanceof Error ? err.message : 'Неизвестная ошибка',
-    };
+    console.error('Не удалось сгенерировать файл:', err);
+    throw err;
   }
 };

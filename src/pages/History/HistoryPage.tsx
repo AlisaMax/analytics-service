@@ -1,6 +1,6 @@
 import Header from '../../components/header/Header';
-import HistoryItem from '../../components/historyItem/HistoryItem';
-import Button from '../../components/UI/button/Button';
+import HistoryItem from './components/historyItem/HistoryItem';
+import Button from '../../components/button/Button';
 import { useHistoryStore } from '../../store/historyStore';
 import type { AggregationResult } from '../../types/aggregationResult';
 import styles from './History.module.css';
