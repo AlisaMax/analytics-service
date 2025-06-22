@@ -59,8 +59,8 @@ export const aggregateFile = async (): Promise<void> => {
         try {
           const json: AggregationResult = JSON.parse(line);
           setResult(json);
-        } catch (e) {
-          console.error('Ошибка парсинга строки:', line);
+        } catch (error) {
+          console.error('Ошибка парсинга строки:', line, error);
         }
       }
     }

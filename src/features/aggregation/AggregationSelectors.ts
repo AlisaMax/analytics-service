@@ -4,7 +4,7 @@ import type { AggregationSelector } from './types';
 
 export const useTotalSpend: AggregationSelector<number | null> = () =>
   useAggregationStore((s) => {
-    let value = s.result?.total_spend_galactic;
+    const value = s.result?.total_spend_galactic;
     return value ? Math.round(value) : null;
   });
 
@@ -13,25 +13,25 @@ export const useRowsAffected: AggregationSelector<number | undefined> = () =>
 
 export const useLessSpentAt: AggregationSelector<string | null> = () =>
   useAggregationStore((s) => {
-    let day = s.result?.less_spent_at;
+    const day = s.result?.less_spent_at;
     return day ? dayToDate(day) : null;
   });
 
 export const useBigSpentAt: AggregationSelector<string | null> = () =>
   useAggregationStore((s) => {
-    let day = s.result?.big_spent_at;
+    const day = s.result?.big_spent_at;
     return day ? dayToDate(day) : null;
   });
 
 export const useBigSpend: AggregationSelector<number | null> = () =>
   useAggregationStore((s) => {
-    let value = s.result?.big_spent_value;
+    const value = s.result?.big_spent_value;
     return value ? Math.round(value) : null;
   });
 
 export const useAverageSpend: AggregationSelector<number | null> = () =>
   useAggregationStore((s) => {
-    let value = s.result?.average_spend_galactic;
+    const value = s.result?.average_spend_galactic;
     return value ? Math.round(value) : null;
   });
 
