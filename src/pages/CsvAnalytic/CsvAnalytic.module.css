@@ -1,0 +1,12 @@
+.ContentBlock {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  .HelpText {
+    font-size: 30px;
+    line-height: 110%;
+    font-weight: 400;
+  }
+}

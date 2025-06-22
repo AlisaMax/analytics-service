@@ -1,0 +1,22 @@
+.AggregationResultField {
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  border-radius: 24px;
+  gap: 5px;
+}
+.AggregationResultValue {
+  font-weight: 500;
+  line-height: normal;
+  font-size: 40px;
+}
+
+.AggregationResultLabel {
+  font-weight: 400;
+  line-height: normal;
+  font-size: 20px;
+}

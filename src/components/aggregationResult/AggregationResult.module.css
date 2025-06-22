@@ -1,0 +1,22 @@
+.AggregationResultBlock {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  flex-grow: 1;
+  .HelpText {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 110%;
+    color: var(--purple-cb);
+    text-align: center;
+  }
+}
+.AggregationResultGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 10px 39px;
+}

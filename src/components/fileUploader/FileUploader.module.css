@@ -1,0 +1,115 @@
+.UplodeWrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.UplodeBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  background-color: var(--purple-ea);
+  width: 100%;
+  border-radius: 40px;
+  padding: 60px;
+  margin-top: 20px;
+}
+.fileAddWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.HelpText {
+  margin-top: 10px;
+  font-size: 35px;
+  font-style: normal;
+  line-height: 110%;
+  color: var(--text-color);
+  font-weight: 400;
+}
+.InputFile {
+  display: none;
+}
+
+.inputFileButton {
+  background-color: var(--white);
+  padding: 16px 52px;
+  border-radius: 10px;
+  font-size: 35px;
+  font-style: normal;
+  line-height: 110%;
+  color: var(--text-color);
+  font-weight: 400;
+  cursor: pointer;
+  min-width: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sendButton {
+  background-color: var(--green);
+  margin-top: 20px;
+}
+
+.uploading {
+  .UplodeBlock {
+    background-color: var(--green-light);
+  }
+}
+
+.error {
+  .UplodeBlock {
+    background-color: transparent;
+    border: 1px solid var(--orange);
+    .inputFileButton {
+      background-color: var(--orange);
+      color: var(--white);
+    }
+    .HelpText {
+      color: var(--orange);
+    }
+  }
+  .sendButton {
+    display: none;
+  }
+}
+
+.added {
+  .UplodeBlock {
+    background-color: transparent;
+    border: 1px solid var(--text-color);
+    .inputFileButton {
+      background-color: var(--purple-cb);
+      color: var(--white);
+    }
+  }
+}
+
+.loading {
+  .UplodeBlock {
+    background-color: transparent;
+    border: 1px solid var(--text-color);
+    .inputFileButton {
+      background-color: var(--purple-cb);
+      color: var(--white);
+      padding: 5px;
+    }
+  }
+}
+
+.success {
+  .UplodeBlock {
+    background-color: transparent;
+    border: 1px solid var(--text-color);
+    .inputFileButton {
+      background-color: var(--green-light);
+      color: var(--text-color);
+    }
+  }
+  .sendButton {
+    display: none;
+  }
+}

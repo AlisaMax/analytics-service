@@ -1,0 +1,19 @@
+.ContentBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.HelpText,
+.StatusText {
+  font-size: 35px;
+  font-style: normal;
+  line-height: 110%;
+}
+
+.error {
+  .StatusText {
+    color: var(--orange);
+  }
+}

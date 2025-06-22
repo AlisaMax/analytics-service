@@ -1,0 +1,19 @@
+.ContentBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.ButtonBlock {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  .GenerateMore {
+    background-color: var(--green);
+  }
+  .ClearHistory {
+    background-color: var(--text-color);
+    color: var(--white);
+  }
+}

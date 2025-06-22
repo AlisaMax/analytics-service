@@ -1,0 +1,43 @@
+.clearFileButton {
+  background-color: var(--text-color);
+  padding: 19px;
+  border-radius: 10px;
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+  flex: none;
+}
+.actionResultWrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.BlockTitle {
+  width: fit-content;
+  padding: 15px 27px;
+  height: 70px;
+  border-radius: 10px;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error {
+  .BlockTitle {
+    background-color: var(--orange);
+    color: var(--white);
+  }
+}
+
+.success {
+  .BlockTitle {
+    background-color: var(--green-light);
+  }
+}
+
+.added {
+  .BlockTitle {
+    background-color: var(--purple-cb);
+  }
+}
