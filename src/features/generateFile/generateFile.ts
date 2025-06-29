@@ -28,6 +28,5 @@ export const generateFile = async () => {
   } catch (err) {
     setStatus(GenerateFileStatus.ERROR);
     console.error('Не удалось сгенерировать файл:', err);
-    throw err;
   }
 };

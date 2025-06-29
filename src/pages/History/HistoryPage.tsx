@@ -12,29 +12,31 @@ const HistoryPage = () => {
   return (
     <>
       <Header />
-      <div className={styles.ContentBlock}>
-        {history.map((item) => (
-          <HistoryItem
-            key={item.id}
-            id={item.id}
-            fileName={item.name}
-            date={item.date}
-            status={item.success}
-            data={item.result as AggregationResult}
+      <div data-testid="history-page">
+        <div className={styles.ContentBlock}>
+          {history.map((item) => (
+            <HistoryItem
+              key={item.id}
+              id={item.id}
+              fileName={item.name}
+              date={item.date}
+              status={item.success}
+              data={item.result as AggregationResult}
+            />
+          ))}
+        </div>
+        <div className={styles.ButtonBlock}>
+          <Button
+            className={styles.GenerateMore}
+            label="Сгенерировать больше"
+            onClick={() => (window.location.href = '/generator')}
           />
-        ))}
-      </div>
-      <div className={styles.ButtonBlock}>
-        <Button
-          className={styles.GenerateMore}
-          label="Сгенерировать больше"
-          onClick={() => (window.location.href = '/generator')}
-        />
-        <Button
-          className={styles.ClearHistory}
-          label="Очистить всё"
-          onClick={() => clearHistory()}
-        />
+          <Button
+            className={styles.ClearHistory}
+            label="Очистить всё"
+            onClick={() => clearHistory()}
+          />
+        </div>
       </div>
     </>
   );

@@ -1,5 +1,5 @@
-import styles from './FileUploader.module.css';
 import cn from 'classnames';
+import styles from './FileUploader.module.css';
 import Button from '../../../../components/button/Button';
 import { handleDrop, onDragEnter, onDragLeave, onDragOver } from './utils/DragAndDrop';
 import { useFileStore, FileStatus } from '../../../../store/fileStore';
@@ -24,7 +24,7 @@ const FileUploader = () => {
         return {
           helpText: baseHelpText,
           uploader: (
-            <label className={styles.inputFileButton} htmlFor="inputFile">
+            <label className={styles.inputFileButton} htmlFor="inputFile" data-testid="input-file">
               <input
                 id="inputFile"
                 ref={inputRef}
@@ -85,13 +85,16 @@ const FileUploader = () => {
         onDragLeave={onDragLeave}
       >
         <div className={styles.fileAddWrap}>{uploader}</div>
-        <p className={styles.HelpText}>{helpText}</p>
+        <p data-testid="help-text" className={styles.HelpText}>
+          {helpText}
+        </p>
       </div>
       <Button
         label="Отправить"
         isDisabled={status !== FileStatus.ADDED}
         className={styles.sendButton}
         onClick={aggregateFile}
+        data-testid="send-button"
       />
     </div>
   );

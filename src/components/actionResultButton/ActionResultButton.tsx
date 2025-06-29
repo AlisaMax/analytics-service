@@ -12,13 +12,19 @@ interface ActionResultButtonProps {
   title: string | undefined;
   status: StatusType;
   inputRef?: RefObject<HTMLInputElement | null>;
+  'data-testid'?: string;
 }
 
-const ActionResultButton: FC<ActionResultButtonProps> = ({ title, status, inputRef }) => {
+const ActionResultButton: FC<ActionResultButtonProps> = ({
+  title,
+  status,
+  inputRef,
+  'data-testid': dataTestId,
+}) => {
   const { setStatus } = useGenerateFileStore.getState();
 
   return (
-    <div className={cn(styles.actionResultWrapper, styles[status])}>
+    <div className={cn(styles.actionResultWrapper, styles[status])} data-testid={dataTestId}>
       <div className={styles.BlockTitle}>{title}</div>
       <span
         onClick={() => (inputRef ? handleClear(inputRef) : setStatus(GenerateFileStatus.INITIAL))}

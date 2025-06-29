@@ -4,10 +4,11 @@ import icons from '../../assets/icons/icons';
 
 const HeaderMenu = () => {
   return (
-    <div className={styles.HeaderMenu}>
+    <div className={styles.HeaderMenu} data-testid="navigation">
       <NavLink
         className={({ isActive }) => `${styles.MenuLink} ${isActive ? styles.active : ''}`}
         to="/"
+        data-testid="analytic-link"
       >
         <span>
           <img src={icons.analytic} />
@@ -18,6 +19,7 @@ const HeaderMenu = () => {
       <NavLink
         className={({ isActive }) => `${styles.MenuLink} ${isActive ? styles.active : ''}`}
         to="/generator"
+        data-testid="generate-link"
       >
         <span>
           <img src={icons.generate} />
@@ -28,6 +30,7 @@ const HeaderMenu = () => {
       <NavLink
         className={({ isActive }) => `${styles.MenuLink} ${isActive ? styles.active : ''}`}
         to="/history"
+        data-testid="history-link"
       >
         <span>
           <img src={icons.history} />

@@ -28,7 +28,7 @@ const HistoryItem = (props: HistoryItemProps) => {
 
   return (
     <>
-      <div className={styles.HistoryItemBlock}>
+      <div className={styles.HistoryItemBlock} data-key={props.id}>
         <div className={styles.HistoryItem} onClick={openModal} style={{ cursor: 'pointer' }}>
           <span className={styles.FileName}>{props.fileName}</span>
           <span className={styles.Date}>{props.date.split(',')[0]}</span>

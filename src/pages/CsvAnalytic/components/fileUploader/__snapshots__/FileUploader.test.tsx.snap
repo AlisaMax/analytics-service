@@ -1,0 +1,242 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Загрузка файла > рендерит компонент в зависимости от статуса added 1`] = `
+<DocumentFragment>
+  <div
+    class="_UplodeWrap_a550f8 _added_a550f8"
+  >
+    <div
+      class="_UplodeBlock_a550f8"
+    >
+      <div
+        class="_fileAddWrap_a550f8"
+      >
+        <div
+          class="_actionResultWrapper_695e79 _added_695e79"
+        >
+          <div
+            class="_BlockTitle_695e79"
+          />
+          <span
+            class="_clearFileButton_695e79"
+          >
+            <img
+              alt="очистить"
+              src="data:image/svg+xml,%3csvg%20width='33'%20height='32'%20viewBox='0%200%2033%2032'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M7.16675%2025.3333L16.5001%2016M16.5001%2016L25.8334%206.66663M16.5001%2016L7.16675%206.66663M16.5001%2016L25.8334%2025.3333'%20stroke='white'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
+            />
+          </span>
+        </div>
+      </div>
+      <p
+        class="_HelpText_a550f8"
+      >
+        файл загружен!
+      </p>
+    </div>
+    <button
+      class="_sendButton_a550f8"
+    >
+      Отправить
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Загрузка файла > рендерит компонент в зависимости от статуса error 1`] = `
+<DocumentFragment>
+  <div
+    class="_UplodeWrap_a550f8 _error_a550f8"
+  >
+    <div
+      class="_UplodeBlock_a550f8"
+    >
+      <div
+        class="_fileAddWrap_a550f8"
+      >
+        <div
+          class="_actionResultWrapper_695e79 _error_695e79"
+        >
+          <div
+            class="_BlockTitle_695e79"
+          />
+          <span
+            class="_clearFileButton_695e79"
+          >
+            <img
+              alt="очистить"
+              src="data:image/svg+xml,%3csvg%20width='33'%20height='32'%20viewBox='0%200%2033%2032'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M7.16675%2025.3333L16.5001%2016M16.5001%2016L25.8334%206.66663M16.5001%2016L7.16675%206.66663M16.5001%2016L25.8334%2025.3333'%20stroke='white'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
+            />
+          </span>
+        </div>
+      </div>
+      <p
+        class="_HelpText_a550f8"
+      >
+        упс, не то...
+      </p>
+    </div>
+    <button
+      class="_sendButton_a550f8"
+      disabled=""
+    >
+      Отправить
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Загрузка файла > рендерит компонент в зависимости от статуса initial 1`] = `
+<DocumentFragment>
+  <div
+    class="_UplodeWrap_a550f8 _initial_a550f8"
+  >
+    <div
+      class="_UplodeBlock_a550f8"
+    >
+      <div
+        class="_fileAddWrap_a550f8"
+      >
+        <label
+          class="_inputFileButton_a550f8"
+          for="inputFile"
+        >
+          <input
+            class="_InputFile_a550f8"
+            id="inputFile"
+            type="file"
+          />
+          Загрузить файл
+        </label>
+      </div>
+      <p
+        class="_HelpText_a550f8"
+      >
+        или перетащите сюда
+      </p>
+    </div>
+    <button
+      class="_sendButton_a550f8"
+      disabled=""
+    >
+      Отправить
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Загрузка файла > рендерит компонент в зависимости от статуса loading 1`] = `
+<DocumentFragment>
+  <div
+    class="_UplodeWrap_a550f8 _loading_a550f8"
+  >
+    <div
+      class="_UplodeBlock_a550f8"
+    >
+      <div
+        class="_fileAddWrap_a550f8"
+      >
+        <div
+          class="_LoadingBlock_f82386"
+        >
+          <div
+            class="_Loading_f82386"
+          />
+        </div>
+      </div>
+      <p
+        class="_HelpText_a550f8"
+      >
+        идёт парсинг файла
+      </p>
+    </div>
+    <button
+      class="_sendButton_a550f8"
+      disabled=""
+    >
+      Отправить
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Загрузка файла > рендерит компонент в зависимости от статуса success 1`] = `
+<DocumentFragment>
+  <div
+    class="_UplodeWrap_a550f8 _success_a550f8"
+  >
+    <div
+      class="_UplodeBlock_a550f8"
+    >
+      <div
+        class="_fileAddWrap_a550f8"
+      >
+        <div
+          class="_actionResultWrapper_695e79 _success_695e79"
+        >
+          <div
+            class="_BlockTitle_695e79"
+          />
+          <span
+            class="_clearFileButton_695e79"
+          >
+            <img
+              alt="очистить"
+              src="data:image/svg+xml,%3csvg%20width='33'%20height='32'%20viewBox='0%200%2033%2032'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M7.16675%2025.3333L16.5001%2016M16.5001%2016L25.8334%206.66663M16.5001%2016L7.16675%206.66663M16.5001%2016L25.8334%2025.3333'%20stroke='white'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
+            />
+          </span>
+        </div>
+      </div>
+      <p
+        class="_HelpText_a550f8"
+      >
+        готово!
+      </p>
+    </div>
+    <button
+      class="_sendButton_a550f8"
+      disabled=""
+    >
+      Отправить
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Загрузка файла > рендерит компонент в зависимости от статуса uploading 1`] = `
+<DocumentFragment>
+  <div
+    class="_UplodeWrap_a550f8 _uploading_a550f8"
+  >
+    <div
+      class="_UplodeBlock_a550f8"
+    >
+      <div
+        class="_fileAddWrap_a550f8"
+      >
+        <label
+          class="_inputFileButton_a550f8"
+          for="inputFile"
+        >
+          <input
+            class="_InputFile_a550f8"
+            id="inputFile"
+            type="file"
+          />
+          Загрузить файл
+        </label>
+      </div>
+      <p
+        class="_HelpText_a550f8"
+      >
+        или перетащите сюда
+      </p>
+    </div>
+    <button
+      class="_sendButton_a550f8"
+      disabled=""
+    >
+      Отправить
+    </button>
+  </div>
+</DocumentFragment>
+`;

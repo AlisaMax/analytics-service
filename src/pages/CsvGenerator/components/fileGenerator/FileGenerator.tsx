@@ -16,12 +16,13 @@ const FileGenerator = () => {
             label="Начать генерацию"
             className={styles.GenerateButton}
             onClick={generateFile}
+            data-testid="generate-button"
           />
         );
       case GenerateFileStatus.ERROR:
-        return <ActionResultButton title={'Ошибка'} status={status} />;
+        return <ActionResultButton title={'Ошибка'} status={status} data-testid="error-button" />;
       case GenerateFileStatus.SUCCESS:
-        return <ActionResultButton title={'Done!'} status={status} />;
+        return <ActionResultButton title={'Done!'} status={status} data-testid="done-button" />;
       case GenerateFileStatus.LOADING:
         return <Loader />;
       default:

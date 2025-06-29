@@ -7,7 +7,7 @@ function CsvAnalyticPage() {
   return (
     <>
       <Header />
-      <div className={styles.ContentBlock}>
+      <div className={styles.ContentBlock} data-testid="analytic-page">
         <p className={styles.HelpText}>
           Загрузите <b>csv</b> файл и <b>получите полную</b> информацию о нём за сверхнизкое время
         </p>

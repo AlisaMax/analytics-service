@@ -23,7 +23,7 @@ const CsvGeneratorPage = () => {
   return (
     <>
       <Header />
-      <div className={cn(styles.ContentBlock, styles[status])}>
+      <div className={cn(styles.ContentBlock, styles[status])} data-testid="generate-page">
         <p className={styles.HelpText}>Сгенерируйте готовый csv-файл нажатием одной кнопки </p>
         <FileGenerator />
         <p className={styles.StatusText}>{renderHelpText()}</p>

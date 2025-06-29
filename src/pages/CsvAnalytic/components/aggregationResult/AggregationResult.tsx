@@ -11,7 +11,7 @@ const AggregationResult = () => {
   return (
     <div className={styles.AggregationResultBlock}>
       {hasData && (status === FileStatus.LOADING || status === FileStatus.SUCCESS) ? (
-        <div className={styles.AggregationResultGrid}>
+        <div className={styles.AggregationResultGrid} data-testid="aggregation-result-grid">
           {fields.map((field) => (
             <AggregationResultField key={field.name} value={field.value} label={field.title} />
           ))}

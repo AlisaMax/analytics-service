@@ -32,3 +32,4 @@ export const useHistoryStore = create<HistoryStore>()(
     }
   )
 );
+export const historyStorePersist = useHistoryStore.persist;
